@@ -11,12 +11,12 @@ Built on the Deno Slack SDK — Slack hosts the runtime, no server required.
 Adds a shortcut to Slack that opens a form with two fields:
 
 - **Webhook URL** — the target endpoint
-- **Payload** — comma-separated values (e.g. `https://linkedin.com/in/bobafett/, Bob Fett`)
+- **Payload** — comma-separated values (e.g. `https://linkedin.com/in/bobafett/, Boba Fett`)
 
 The app splits the payload on commas and converts it to a numbered JSON object before sending:
 
 ```json
-{"1": "https://linkedin.com/in/bobafett/", "2": "Bob Fett"}
+{"1": "https://linkedin.com/in/bobafett/", "2": "Boba Fett"}
 ```
 
 You handle field mapping on the receiving end.
@@ -74,7 +74,7 @@ slack login
 slack run
 ```
 
-The app will install to your workspace as `slack-send-to-webhook (local)`. You'll be prompted to create a trigger — select `triggers/send_webhook_trigger.ts`.
+The app will install to your workspace as `slack-send-to-clay-webhook (local)`. You'll be prompted to create a trigger — select `triggers/send_webhook_trigger.ts`.
 
 Paste the generated shortcut URL into any Slack channel. Click it to open the form.
 
