@@ -1,4 +1,4 @@
-# slack-send-to-webhook
+# slack-send-to-clay-webhook
 
 A Slack app that adds a native "Send to Webhook" step to Workflow Builder. Fill out a form in Slack, and the app POSTs the data as JSON to any webhook URL.
 
